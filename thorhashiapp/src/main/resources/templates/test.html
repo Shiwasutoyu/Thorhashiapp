@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1 th:text="${title}"></h1>
+  <p>
+    <div th:text="${message}"></div>
+  </p>
+  <p>
+    <div th:text="${message}"></div>
+  </p>
+  <p>
+    <div th:text="${message}"></div>
+  </p>
+  
+</body>
+</html>
+
+
+<!-- 
+
+CREATE TABLE `thorhashiapp`.`user` (
+  `id` BIGINT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NOT NULL,
+  `gender` VARCHAR(100) NOT NULL,
+  `phone` VARCHAR(50) NULL,
+  `update_date` DATETIME NOT NULL,
+  `create_date` DATETIME NOT NULL,
+  `delete_date` DATETIME NULL,
+  PRIMARY KEY (`id`));
+
+  INSERT INTO `thorhashiapp`.`user` (`id`, `name`, `gender`, `phone`, `update_date`, `create_date`) VALUES ('1', 'テスト太郎', '男', '080-0000-0000', '2019-05-06 12:00:00', '2019-05-01 12:00:00');
+
+  CREATE TABLE `thorhashiapp`.`user` (
+  `id` BIGINT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NOT NULL,
+  `gender` VARCHAR(100) NULL,
+  `phone` VARCHAR(50) NULL,
+  `comment` VARCHAR(250) NULL,
+  `update_date` DATETIME NOT NULL,
+  `create_date` DATETIME NOT NULL,
+  `delete_date` DATETIME NULL,
+  PRIMARY KEY (`id`));
+
+ -->
